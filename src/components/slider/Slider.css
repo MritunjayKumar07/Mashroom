@@ -1,0 +1,99 @@
+.s-container {
+    position: relative;
+    margin: 15px;
+}
+
+.s-container .swiper {
+    width: 70%;
+    height: 10rem;
+    position: relative;
+}
+
+.s-container .swiper-slider {
+    background: white;
+    display: flex;
+    border-radius: 10px;
+    padding: 1rem;
+    height: auto;
+    block-size: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.s-container .swiper-button-prev {
+    left: 2rem;
+}
+
+.s-container .swiper-button-next {
+    right: 2rem;
+}
+
+.s-container .swiper-button-prev,
+.s-container .swiper-button-next {
+    color: black;
+}
+
+.s-container .left-s {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.name>:nth-child(1) {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.name>:nth-child(2) {
+    font-size: 0.7rem;
+}
+
+.left-s>:nth-child(2) {
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+
+.left-s>:nth-child(3) {
+    font-size: 0.6rem;
+    border: 1px solid var(--black);
+    padding: 5px 10px;
+    width: max-content;
+    border-radius: 15px;
+}
+
+.img-p {
+    transform: rotate(-20deg);
+    position: absolute;
+    right: 0;
+    top: 3rem;
+    /* width: 6rem; */
+    /* height: 11rem; */
+    width: 60%;
+    height: 100%;
+    bottom: -20%;
+    transition: all 1s;
+}
+
+.img-p:hover{
+    scale: 1.4;
+}
+
+@media screen and (max-width: 856px) {
+    .s-container .swiper {
+        width: 95%;
+        height: 10rem;
+        border-radius: 5px;
+    }
+
+    .s-container .swiper-button-prev,
+    .s-container .swiper-button-next {
+        display: none;
+    }
+
+}
